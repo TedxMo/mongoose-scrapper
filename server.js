@@ -29,8 +29,8 @@ app.use(express.static("public"));
 // Set mongoose to leverage built in JavaScript ES6 Promises
 // Connect to the Mongo DB
 mongoose.Promise = Promise;
-// var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
-var MONGODB_URI ="mongodb://heroku_zx21rn5k:m3ffajeuvpm5v4p45akg1jj9vb@ds263707.mlab.com:63707/heroku_zx21rn5k";
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+// var MONGODB_URI ="mongodb://heroku_zx21rn5k:m3ffajeuvpm5v4p45akg1jj9vb@ds263707.mlab.com:63707/heroku_zx21rn5k";
 mongoose.connect(MONGODB_URI, {
 // mongoose.connect("mongodb://localhost/week18Populater", {
   useMongoClient: true
