@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Scraping With Mongoose</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+      body { background-color: #F2F6D0 }
+      #wrapper {
+        width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5%;
+      }
+      #articles {
+        display: inline-block;
+        overflow: auto;
+        width: 60%;
+        height: 700px;
+      }
+      #notes {
+        float: right;
+        width: 30%;
+      }
+      textarea, input {
+        display: block;
+        width: 100%;
+        background-color: #FCF5C7;
+      }
+      input {
+        height: 36px;
+        font-size: 24px;
+      }
+      textarea {
+        height: 200px;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <h1>Note Scraper</h1>
+      <button class="button btn-large" onclick = "window.location.href='/'">Home</button>
+      <h1></h1>
+      <div id="saved_articles"></div>
+      <!-- <div id="notes"></div> -->
+
+      <!-- Modal Structure -->
+        <div id="notesABC" class="modal" >
+            <div class="modal-header" id="modalHeader"></div>
+            <div class="modal-content" id = "abc">
+                <div id="notes_content"></div>
+            </div>
+            <div class="modal-footer">
+                <!-- Text Area -->
+                <div id="input_content">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
